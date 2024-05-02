@@ -1,0 +1,25 @@
+import = [
+	"~/.config/alacritty/fonts.toml",
+	"~/.config/alacritty/colors_kanagawa-dragon.toml",
+	"~/.config/alacritty/keymaps.toml"
+]
+live_config_reload = true
+
+[env]
+#term = "xterm-256color"
+term = "alacritty"
+
+[window]
+decorations = "buttonless"
+dynamic_padding = false
+dynamic_title = true
+opacity = 0.9
+startup_mode = "Windowed"
+
+[window.dimensions]
+columns = 177
+lines = 45
+
+[window.padding]
+x = 14
+y = 12

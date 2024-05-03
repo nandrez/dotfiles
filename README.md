@@ -1,4 +1,4 @@
-# # My dotfiles
+# My dotfiles
 This directory contains the dotfiles for my system
 
 ## Requirements
@@ -21,7 +21,7 @@ brew install stow
 ```
 
 ## Installation
-First, check out the dotfiles repo in your $HOME directory using git
+Clone the dotfiles repo to your machine, for instance ~/Dev/dotfiles
 ```
 $ git clone git@github.com/nandrez/dotfiles.git
 ```

@@ -6,15 +6,15 @@ import = [
 live_config_reload = true
 
 [env]
-#term = "xterm-256color"
-term = "alacritty"
+term = "xterm-256color"
 
 [window]
+startup_mode = "Windowed"
 decorations = "buttonless"
 dynamic_padding = false
 dynamic_title = true
-opacity = 0.9
-startup_mode = "Windowed"
+opacity = 0.8
+blur = true
 
 [window.dimensions]
 columns = 177

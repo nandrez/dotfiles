@@ -6,7 +6,6 @@ return {
 		dependencies = {
 			'nvim-lua/plenary.nvim',
 			'nvim-telescope/telescope-ui-select.nvim',
-			'smartpde/telescope-recent-files',
 		},
 		config = function()
 			local telescope = require('telescope')
@@ -28,8 +27,6 @@ return {
 			vim.keymap.set('n', '<leader>sw', builtin.grep_string, { desc = '[S]earch current [W]ord' })
 			vim.keymap.set('n', '<leader>sg', builtin.live_grep, { desc = '[S]earch by [G]rep' })
 			vim.keymap.set('n', '<leader>sd', builtin.diagnostics, { desc = '[S]earch [D]iagnostics' })
-			local recent_files = telescope.extensions.recent_files
-			vim.keymap.set('n', '<leader>sr', recent_files.pick, { desc = '[S]earch [R]ecent files' })
 		end,
 	},
 }

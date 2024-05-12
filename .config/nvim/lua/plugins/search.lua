@@ -1,5 +1,7 @@
 return {
-	---
+	--- Telescope is a highly customizable fuzzy finder that supports extensions.
+	-- In order to use its grepping functionality, 'ripgrep' (https://formulae.brew.sh/formula/ripgrep) is required
+	-- See https://github.com/nvim-telescope/telescope.nvim for more details
 	{
 		'nvim-telescope/telescope.nvim',
 		branch = '0.1.x',

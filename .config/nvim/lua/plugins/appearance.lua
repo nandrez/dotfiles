@@ -12,15 +12,6 @@ return {
 		end,
 	},
 	{
-		'nvim-lualine/lualine.nvim',
-		dependencies = { 'nvim-tree/nvim-web-devicons' },
-		opts = {
-			options = {
-				theme = 'dracula',
-			},
-		},
-	},
-	{
 		'nvim-telescope/telescope.nvim',
 		branch = '0.1.x',
 		dependencies = { 'nvim-lua/plenary.nvim', 'nvim-telescope/telescope-ui-select.nvim' },

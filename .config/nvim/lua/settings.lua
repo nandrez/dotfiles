@@ -5,6 +5,7 @@ opt.number = true
 opt.relativenumber = true
 opt.cursorline = true
 opt.wrap = false
+opt.conceallevel = 2
 
 -- INDENTATION
 opt.tabstop = 4

@@ -9,12 +9,13 @@ live_config_reload = true
 term = "xterm-256color"
 
 [window]
-startup_mode = "SimpleFullscreen"
-decorations = "Transparent"
+startup_mode = "Windowed"
+decorations = "Buttonless"
+dimensions = { columns = 188, lines = 47 }
+padding = { x = 8, y = 8 }
 option_as_alt = "OnlyLeft"
 dynamic_padding = true
 dynamic_title = true
 opacity = 0.8
 blur = true
-padding = { x = 8, y = 8 }
 

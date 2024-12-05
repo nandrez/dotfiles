@@ -8,6 +8,7 @@ if status is-interactive
     # HOMEBREW
     eval "$(/opt/homebrew/bin/brew shellenv)"
     fish_add_path ~/.config/bin
+	alias brew=/Users/Shared/brew.sh
 
     starship init fish | source
     zoxide init fish | source

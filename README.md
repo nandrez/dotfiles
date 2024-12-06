@@ -30,3 +30,8 @@ then use GNU stow to create symlinks
 ```
 $ stow -t ~ ./dotfiles
 ```
+
+or update the directory structure using
+```
+$ stow -t --adopt ~ ./dotfiles
+```

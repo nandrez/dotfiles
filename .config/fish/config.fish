@@ -15,4 +15,7 @@ if status is-interactive
 
 	# improved 'cd' (https://github.com/ajeetdsouza/zoxide)
     zoxide init fish | source
+
+	# Zellij (https://zellij.dev/)
+	abbr -a zj zellij
 end

@@ -6,16 +6,31 @@ return {
 			'nvim-lua/plenary.nvim',
 			'nvim-tree/nvim-web-devicons',
 			'MunifTanjim/nui.nvim',
-			'3rd/image.nvim',
 		},
-		config = function()
-			require('neo-tree').setup({
-				filesystem = {
-					follow_current_file = {
-						enabled = true,
+		opts = {
+			filesystem = {
+				follow_current_file = {
+					enabled = true,
+				},
+				filtered_items = {
+					hide_gitignored = true,
+					hide_dotfiles = false,
+					hide_by_name = {
+						'.github',
+						'.gitignore',
+						'package-lock.json',
+						'.changeset',
+						'.prettierrc.json',
+					},
+					never_show = {
+						'.git',
+						'.DS_Store',
 					},
 				},
-			})
+			},
+		},
+		config = function(_, opts)
+			require('neo-tree').setup(opts)
 			vim.keymap.set('n', '<leader>ft', ':Neotree<CR>', {})
 		end,
 	},

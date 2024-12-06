@@ -5,7 +5,7 @@ if status is-interactive
     set -U fish_key_bindings fish_vi_key_bindings
     set -Ux EDITOR nvim
 
-    # HOMEBREW
+    # Homebrew
     eval "$(/opt/homebrew/bin/brew shellenv)"
     fish_add_path ~/.config/bin
 	alias brew=/Users/Shared/brew.sh
@@ -16,6 +16,6 @@ if status is-interactive
 	# improved 'cd' (https://github.com/ajeetdsouza/zoxide)
     zoxide init fish | source
 
-	# Zellij (https://zellij.dev/)
+	# terminal multiplexer (https://zellij.dev/)
 	abbr -a zj zellij
 end

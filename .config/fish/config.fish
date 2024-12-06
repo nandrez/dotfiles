@@ -10,6 +10,9 @@ if status is-interactive
     fish_add_path ~/.config/bin
 	alias brew=/Users/Shared/brew.sh
 
+	# shell prompt (https://starship.rs/)
     starship init fish | source
+
+	# improved 'cd' (https://github.com/ajeetdsouza/zoxide)
     zoxide init fish | source
 end

@@ -4,3 +4,6 @@ background-blur-radius = 20
 
 font-family = JetBrains Mono
 font-size = 18
+
+window-width = 140
+window-height = 42

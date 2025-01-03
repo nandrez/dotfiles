@@ -40,7 +40,6 @@ return {
 			local cmp = require('cmp')
 			local luasnip = require('luasnip')
 			luasnip.config.setup({})
-
 			cmp.setup({
 				snippet = {
 					expand = function(args)
@@ -106,6 +105,13 @@ return {
 					{ name = 'path' },
 				},
 			})
+			local autopairs = require('nvim-autopairs.completion.cmp')
+			cmp.event:on('confirm_done', autopairs.on_confirm_done())
 		end,
+	},
+	{
+		'windwp/nvim-autopairs',
+		event = 'InsertEnter',
+		config = true,
 	},
 }

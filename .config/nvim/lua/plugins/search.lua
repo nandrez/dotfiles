@@ -29,8 +29,6 @@ return {
 			vim.keymap.set('n', '<leader>sg', builtin.live_grep, { desc = '[S]earch by [G]rep' })
 			vim.keymap.set('n', '<leader>sd', builtin.diagnostics, { desc = '[S]earch [D]iagnostics' })
 			vim.keymap.set('n', '<leader>sb', builtin.buffers, { desc = '[S]earch within current [B]uffers' })
-			local notify_extension = telescope.extensions.notify
-			vim.keymap.set('n', '<leader>sn', notify_extension.notify, { desc = '[S]earch [N]otifications' })
 		end,
 	},
 }

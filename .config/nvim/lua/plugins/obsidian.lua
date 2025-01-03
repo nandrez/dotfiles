@@ -99,8 +99,8 @@ return {
 
 	init = function()
 		local which_key = require('which-key')
-		which_key.register({
-			['<leader>o'] = { name = '+Obsidian' },
+		which_key.add({
+			{ '<leader>o', group = '[O]bsidian' },
 		})
 	end,
 
@@ -109,6 +109,45 @@ return {
 			'<leader>on',
 			'<cmd>ObsidianNew<cr>',
 			desc = '[N]ew note',
+		},
+		{
+			'<leader>oo',
+			'<cmd>ObsidianOpen<cr>',
+			desc = '[O]pen note',
+		},
+		{
+			'<leader>or',
+			'<cmd>ObsidianRename<cr>',
+			desc = '[R]ename note',
+		},
+		{
+			'<leader>ox',
+			'<cmd>ObsidianExtractNote<cr>',
+			desc = 'e[X]tract selection into new note',
+		},
+		{
+			'<leader>of',
+			group = '[F]ollow link',
+		},
+		{
+			'<leader>ofv',
+			'<cmd>ObsidianFollowLink vsplit<cr>',
+			desc = 'Open link in [V]ertical split',
+		},
+		{
+			'<leader>ofh',
+			'<cmd>ObsidianFollowLink hsplit<cr>',
+			desc = 'Open link in [H]orizontal split',
+		},
+		{
+			'<leader>ob',
+			'<cmd>ObsidianBacklinks<cr>',
+			desc = '[B]acklinks to current note',
+		},
+		{
+			'<leader>ol',
+			'<cmd>ObsidianLinks<cr>',
+			desc = '[L]inks within current note',
 		},
 	},
 }

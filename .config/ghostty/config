@@ -7,3 +7,5 @@ font-size = 18
 
 window-width = 140
 window-height = 42
+
+macos-option-as-alt = right

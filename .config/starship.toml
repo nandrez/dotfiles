@@ -3,9 +3,9 @@ palette = "catppuccin_mocha"
 
 [character]
 # Note the use of Catppuccin color 'maroon'
-success_symbol = "[[♥](green) ❯](maroon)"
-error_symbol = "[❯](red)"
-vimcmd_symbol = "[❮](green)"
+success_symbol = "[❯](green)"
+error_symbol = "[](red)"
+vimcmd_symbol = "[](yellow)"
 
 [directory]
 truncation_length = 4
